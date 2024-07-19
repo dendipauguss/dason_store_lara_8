@@ -9,12 +9,16 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
+use App\Models\About;
 
 class AuthController extends Controller
 {
     public function index()
     {
-        return view('auth.login');
+        $about = About::first();
+        return view('auth.login', [
+            'web_title' => $about,
+        ]);
     }
 
     public function login(Request $request)
