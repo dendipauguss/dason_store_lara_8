@@ -3,7 +3,7 @@
 @section('title', 'Data Kategori')
 
 @section('content')
-    <div class="col-md-10 grid-margin stretch-card">
+    <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-header bg-white">
                 <div class="home-tab">
@@ -103,7 +103,7 @@
                                         <a href="#" data-id="${val.id}" class="btn btn-danger text-white me-0 btn-hapus"><i class="icon-trash"></i>
                                                 Hapus</a>
                                     </div>
-                                </div>                                
+                                </div>
                             </td>
                         </tr>
                         `;
