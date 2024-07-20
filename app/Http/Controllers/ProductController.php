@@ -25,11 +25,6 @@ class ProductController extends Controller
         return view('product.index', compact('categories', 'subcategories'));
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $products = Product::with('category', 'subcategory')->get();
