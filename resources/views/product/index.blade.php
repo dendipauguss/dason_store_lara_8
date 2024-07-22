@@ -38,6 +38,8 @@
             </div>
         </div>
     </div>
+
+    {{-- Form Tambah Data --}}
     <div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -148,7 +150,7 @@
                             <td>${val.sku}</td>
                             <td>${val.ukuran}</td>
                             <td>${val.warna}</td>
-                            <td><img src="/uploads/${val.gambar}" width="150"></td>
+                            <td><img src="/uploads/${val.gambar}"></td>
                             <td>
                                 <div class="home-tab">
                                     <div class="btn-wrapper">

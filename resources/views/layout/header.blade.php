@@ -7,7 +7,10 @@
         </div>
         <div>
             <a class="navbar-brand brand-logo" href="index.html">
-                <img src="staradmin/assets/images/logo.svg" alt="logo" />
+                @php
+                    $about = App\Models\About::first();
+                @endphp
+                <img src="/uploads/{{ $about->logo }}" alt="logo" />
             </a>
             <a class="navbar-brand brand-logo-mini" href="index.html">
                 <img src="staradmin/assets/images/logo-mini.svg" alt="logo" />
