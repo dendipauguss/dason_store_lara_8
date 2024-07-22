@@ -10,7 +10,8 @@
                 @php
                     $about = App\Models\About::first();
                 @endphp
-                <img src="/uploads/{{ $about->logo }}" alt="logo" />
+                {{-- <img src="/uploads/{{ $about->logo }}" alt="logo" /> --}}
+                <p class="fs-5">{{ $about->judul_website }}</p>
             </a>
             <a class="navbar-brand brand-logo-mini" href="index.html">
                 <img src="staradmin/assets/images/logo-mini.svg" alt="logo" />
